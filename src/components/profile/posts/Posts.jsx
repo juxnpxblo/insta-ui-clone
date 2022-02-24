@@ -3,7 +3,7 @@ import PostsGrid from './PostsGrid';
 
 const Posts = () => {
   return (
-    <div className="max-w-[935px] mx-auto">
+    <div className="min-w-[935px] mx-auto">
       <Header />
       <PostsGrid />
     </div>

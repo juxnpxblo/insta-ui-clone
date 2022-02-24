@@ -41,10 +41,10 @@ const Feed = () => {
   return (
     <>
       <Navbar />
-      <div className="mt-7 max-w-[614px] mx-auto">
-        <div className="mb-7">
-          <Stories />
-        </div>
+      <div className="my-7 max-w-[614px] mx-auto sm:relative">
+        <Stories />
+      </div>
+      <div className="max-w-[614px] mx-auto">
         <Post post={posts[0]} />
         <Post post={posts[1]} />
         <Post post={posts[2]} />
