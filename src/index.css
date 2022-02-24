@@ -1,0 +1,94 @@
+/* tailwindcss setup */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .ig-gradient-circle {
+    @apply cursor-pointer ig-gradient rounded-full flex items-center justify-center;
+  }
+}
+
+@layer utilities {
+  .drag-none {
+    -webkit-user-drag: none;
+  }
+
+  .light-left-shadow {
+    box-shadow: -1px 1px 3px 3px rgba(0, 0, 0, 0.1);
+  }
+  .light-right-shadow {
+    box-shadow: -1px -1px 3px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  /* https://stackoverflow.com/a/37751650/15595594 */
+  .ig-gradient {
+    background: radial-gradient(
+      circle at 33% 100%,
+      #fed373 4%,
+      #f15245 30%,
+      #d92e7f 62%,
+      #9b36b7 85%,
+      #515ecf
+    );
+  }
+}
+
+/* additional base styling */
+html {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    sans-serif;
+}
+body {
+  background-color: #fafafa;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* menu item on hover animation */
+.menu-item:hover > :nth-child(2) {
+  transform: translateX(15px);
+  transition-duration: 200ms;
+}
+
+/* fading stacked images*/
+.stacked-image {
+  position: absolute;
+  top: 99px;
+  right: 63px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 2s ease;
+}
+@media (min-width: 876px) {
+  .show {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/* feed posts on hover */
+.image:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+}
+.image:hover:after {
+  opacity: 1;
+}
+.image:hover :nth-child(2) {
+  display: flex;
+}
