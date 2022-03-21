@@ -62,11 +62,12 @@ body {
 /* fading stacked images*/
 .stacked-image {
   position: absolute;
-  top: 99px;
-  right: 63px;
+  top: 27px;
+  right: 48px;
   visibility: hidden;
   opacity: 0;
   transition: all 2s ease;
+  width: 250px;
 }
 @media (min-width: 876px) {
   .show {

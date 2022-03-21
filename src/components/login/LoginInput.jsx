@@ -17,7 +17,7 @@ const LoginInput = React.forwardRef(
           value={value}
           spellCheck="false"
           onChange={(e) => setValue(e.target.value)}
-          className={`rounded-[3px] text-[#262626] bg-[#fafafa] w-full p-2 outline-none border-solid border border-[#dbdbdb] mb-1.5 block mx-auto h-9 ${
+          className={`rounded-[3px] text-[#262626] bg-[#fafafa] w-full p-2 outline-none border-solid border border-[#dbdbdb] focus:border-[#8e8e8e] mb-1.5 block mx-auto h-9 ${
             value ? 'text-xs pt-5' : ''
           }`}
           ref={ref}

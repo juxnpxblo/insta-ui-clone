@@ -1,10 +1,9 @@
 import { useEffect, useRef } from 'react';
 
-import first from '../../assets/images/phone-1.jpg';
-import second from '../../assets/images/phone-2.jpg';
-import third from '../../assets/images/phone-3.jpg';
-import fourth from '../../assets/images/phone-4.jpg';
-import fifth from '../../assets/images/phone-5.jpg';
+import first from '../../assets/images/phone-1.png';
+import second from '../../assets/images/phone-2.png';
+import third from '../../assets/images/phone-3.png';
+import fourth from '../../assets/images/phone-4.png';
 
 import FadeStackedImages from '../../utils/FadeStackedImages';
 
@@ -15,15 +14,11 @@ const Phones = () => {
 
   useEffect(() => {
     const phones = phonesRef.current;
-    const fadeDelay = 5000;
+    const fadeDelay = 4600;
     new FadeStackedImages(phones, fadeDelay).startFading();
   }, []);
 
   const stackedImages = [
-    {
-      src: fifth,
-      show: false,
-    },
     {
       src: fourth,
       show: false,
