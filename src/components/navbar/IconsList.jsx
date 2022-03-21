@@ -6,11 +6,10 @@ import ExploreIcon from './ExploreIcon';
 import ActivityIcon from './ActivityIcon';
 import AccountIcon from './AccountIcon';
 
-const IconsList = () => {
+const IconsList = ({ isFeed }) => {
   return (
     <div className="flex gap-5">
-      {/* <HomeIcon /> */}
-      <HomeIconOutline />
+      {isFeed ? <HomeIcon /> : <HomeIconOutline />}
       <DirectIcon />
       <NewPostIcon />
       <ExploreIcon />

@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-
 import Phones from '../components/login/Phones';
 import LoginBox from '../components/login/LoginBox';
 import SignUpBox from '../components/login/SignUpBox';
@@ -9,7 +7,7 @@ import appStoreBtn from '../assets/images/appstore-btn.png';
 import googlePlayBtn from '../assets/images/googleplay-btn.png';
 
 const Login = () => {
-  useEffect(() => (document.title = 'Login • Instagram'));
+  document.title = 'Login • Instagram';
 
   return (
     <div className="flex mx-auto justify-center items-center grow">

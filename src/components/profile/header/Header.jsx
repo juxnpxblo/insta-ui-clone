@@ -19,7 +19,7 @@ const Header = () => {
           <AccountUser />
           <div className="flex ml-5 gap-2">
             <MessageButton />
-            <UnfollowButton />
+            <FollowButton />
             <Dots />
           </div>
         </div>

@@ -8,6 +8,8 @@ const Menu = () => {
     { path: 'profile', text: 'Profile' },
   ];
 
+  document.title = 'Menu • Instagram';
+
   return (
     <>
       <div className="text-[#262626] font-extralight w-min mx-auto h-full flex">

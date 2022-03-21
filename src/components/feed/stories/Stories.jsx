@@ -5,7 +5,7 @@ import SlideArrow from './SlideArrow';
 const Stories = () => {
   return (
     <WhiteBox>
-      <div className="py-4 flex items-center ">
+      <div className="py-4 flex items-center">
         <SlideArrow />
         <StoriesRow />
         <SlideArrow right />

@@ -38,18 +38,23 @@ const Feed = () => {
       date: '7 DAYS',
     },
   ];
+
+  document.title = 'Instagram';
+
   return (
-    <>
-      <Navbar />
-      <div className="my-7 max-w-[614px] mx-auto sm:relative">
-        <Stories />
-      </div>
+    <div className="max-w-[614px] sm:min-w-full">
+      <Navbar isFeed />
       <div className="max-w-[614px] mx-auto">
-        <Post post={posts[0]} />
-        <Post post={posts[1]} />
-        <Post post={posts[2]} />
+        <div className="my-7 relative">
+          <Stories />
+        </div>
+        <div>
+          <Post post={posts[0]} />
+          <Post post={posts[1]} />
+          <Post post={posts[2]} />
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 

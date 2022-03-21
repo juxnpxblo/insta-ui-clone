@@ -1,14 +1,14 @@
+import profilePic from '../../assets/images/profile-pic.jpg';
+
 const AccountIcon = () => {
-  const userLogged = '';
-
-  const profilePic = '';
-
   return (
-    <a href={userLogged}>
+    <button>
       <div className="bg-[#5c5c5c] w-6 h-6 rounded-full">
-        <img src={profilePic} alt="" className="rounded-full" />
+        <a href="/profile">
+          <img src={profilePic} alt="" className="rounded-full" />
+        </a>
       </div>
-    </a>
+    </button>
   );
 };
 

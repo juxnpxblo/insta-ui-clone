@@ -1,5 +1,7 @@
 const AuthorName = ({ name }) => {
-  return <span className="text-sm text-[#262626] font-semibold">{name}</span>;
+  return (
+    <button className="text-sm text-[#262626] font-semibold">{name}</button>
+  );
 };
 
 export default AuthorName;
