@@ -14,7 +14,7 @@ const Login = () => {
       <div className="invisible md:visible md:w-[454px] h-[618px]">
         <Phones />
       </div>
-      <div className="min-w-[350px] md:-ml-4">
+      <div className="min-w-[350px]">
         <div className="mb-2.5">
           <LoginBox />
         </div>

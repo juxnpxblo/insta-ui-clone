@@ -1,11 +1,11 @@
 # Instagram web app UI clone (React + TailwindCSS)
 
-[hosting]: https://chat-juxnpxblo.herokuapp.com/
+[hosting]: https://insta-ui-clone.vercel.app/
 [preview1]: https://github.com/juxnpxblo/insta-ui-clone/blob/master/preview-1.png
 [preview2]: https://github.com/juxnpxblo/insta-ui-clone/blob/master/preview-2.png
 [preview3]: https://github.com/juxnpxblo/insta-ui-clone/blob/master/preview-3.png
 
-> See the [live preview](https://insta-ui-clone.vercel.app/)
+> See the [live preview][hosting]
 
 ## Gallery
 
